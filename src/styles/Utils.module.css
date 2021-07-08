@@ -1,0 +1,66 @@
+.flex {
+    display: flex;
+}
+
+.rowFlex {
+    display: flex;
+    flex-direction: row;
+}
+.colFlex {
+    display: flex;
+    flex-direction: column;
+}
+.justifyBetween {
+    justify-content: space-between;
+}
+
+.justifyCenter {
+    justify-content: center;
+}
+
+.itemCenter {
+    align-items: center;
+}
+
+.textCenter {
+    text-align: center;
+}
+
+/* button  utility */
+
+.btn {
+    padding: 1rem 2.7rem;    
+    line-height: 0.8;
+    font-size: 1.4rem;
+    font-weight: bold;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+}
+
+/* utils for container */
+
+.container {
+    width: 700px;
+    background: #ffffff;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    flex-direction: column;
+}
+
+@media only screen and (max-width: 450px) {
+    .container {
+        width: 100vw;
+    }
+    .btn {
+        padding: 0.8rem 1.9rem;    
+        font-size: 1.4rem;
+    }
+}

@@ -1,0 +1,118 @@
+.upperBtnDiv {
+    margin: 2rem 0;
+}
+
+.inputSection {
+    flex-direction: column;
+    height: 75vh;
+}
+
+.inputSection > div > label {
+    width: 75px;
+}
+
+.inputSection > div {
+    margin: 1rem 0;
+}
+
+.inputSection > div > label {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-right: 0.8rem;
+}
+
+.inputSection > div > div > input {
+    width: 380px;
+    border: none;
+    outline: none;
+    border-bottom: 1.5px solid var(--secondary);
+    font-size: 1.2rem;
+    padding-left: 0.1rem;
+}
+
+.inputSection > div > div > div {
+    width: 380px;
+    height: 10px;
+    color: red;
+    border: none;
+    outline: none;
+    font-size: 0.90rem;
+}
+
+.saveBtn {
+    margin: 2rem 0;
+    background: var(--primary);
+    transition: all .3s ease;
+}
+
+.saveBtn:hover {
+    background: var(--secondary);
+    color: var(--primary);
+}
+
+.showDataSection {
+    flex-direction: column;
+    overflow-y: scroll;
+    height: 75vh;
+    box-shadow: inset 0 0 5px 10px var(--pure);
+}
+
+.showDataSection::-webkit-scrollbar {
+    width: 0;
+}
+
+.showDataSection > div {
+    margin: 25px 20px;
+    width: 600px;
+    background: var(--heaven);
+    padding: 0 1.1rem 0 0.3rem;
+    border-radius: 3px;
+    box-shadow: 0 0 5px 10px var(--heaven);
+    font-size: 1.2rem;
+    cursor: pointer;
+    border: 4px solid transparent;
+    transition: all .3s ease;
+}
+
+.showDataSection > div:hover {
+    border: 4px solid var(--sky);
+}
+
+.showDataSection > div > p {
+    padding: 0.5rem;
+    color: var(--danger);
+}
+
+.showDataSection > div > p:nth-child(1) {
+    font-weight: bold;
+}
+
+.showDataSection > div > p:nth-child(2) {
+    font-weight: bold;
+}
+
+.showDataSection > div > p > span:first-child {
+    float: left;
+}
+
+.showDataSection > div > p > span:last-child {
+    float: right;
+}
+
+@media only screen and (max-width: 450px) {
+    .inputSection {
+        height: 80vh;
+    }
+    .inputSection > div > div > input {
+        width: 70vw;
+    }
+    .inputSection > div > div > div {
+        width: 70vw;
+    }
+    .showDataSection {
+        height: 80vh;
+    }
+    .showDataSection > div {
+        width: 85vw;
+    }
+}
